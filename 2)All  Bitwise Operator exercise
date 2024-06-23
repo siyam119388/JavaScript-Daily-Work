@@ -27,3 +27,22 @@
         // Bitwise NOT
         let notResult = ~5; // ~0101 = 1010 (which is -6 in two's complement form)
         document.getElementById("notResult").textContent = notResult;
+
+        // Bitwise XOR
+        let xorResult = 5 ^ 1; // 0101 ^ 0001 = 0100
+        document.getElementById("xorResult").textContent = xorResult;
+
+        // Left shift
+        let leftShiftResult = 5 << 1; // 0101 << 1 = 1010
+        document.getElementById("leftShiftResult").textContent = leftShiftResult;
+
+        // Right shift
+        let rightShiftResult = 5 >> 1; // 0101 >> 1 = 0010
+        document.getElementById("rightShiftResult").textContent = rightShiftResult;
+
+        // Unsigned right shift
+        let unsignedRightShiftResult = 5 >>> 1; // 0101 >>> 1 = 0010
+        document.getElementById("unsignedRightShiftResult").textContent = unsignedRightShiftResult;
+    </script>
+</body>
+</html>

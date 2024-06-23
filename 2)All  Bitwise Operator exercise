@@ -1,1 +1,26 @@
+// Bitwise AND
+let andResult = 5 & 1; // 0101 & 0001 = 0001
+console.log(`5 & 1 = ${andResult}`);
+// Bitwise OR
+let orResult = 5 | 1; // 0101 | 0001 = 0101
+console.log(`5 | 1 = ${orResult}`);
 
+// Bitwise NOT
+let notResult = ~5; // ~0101 = 1010 (which is -6 in two's complement form)
+console.log(`~5 = ${notResult}`); 
+
+// Bitwise XOR
+let xorResult = 5 ^ 1; // 0101 ^ 0001 = 0100
+console.log(`5 ^ 1 = ${xorResult}`); 
+
+// Left shift
+let leftShiftResult = 5 << 1; // 0101 << 1 = 1010
+console.log(`5 << 1 = ${leftShiftResult}`);
+
+// Right shift
+let rightShiftResult = 5 >> 1; // 0101 >> 1 = 0010
+console.log(`5 >> 1 = ${rightShiftResult}`); 
+
+// Unsigned right shift
+let unsignedRightShiftResult = 5 >>> 1; // 0101 >>> 1 = 0010
+console.log(`5 >>> 1 = ${unsignedRightShiftResult}`); 

@@ -1,26 +1,29 @@
-// Bitwise AND
-let andResult = 5 & 1; // 0101 & 0001 = 0001
-console.log(`5 & 1 = ${andResult}`);
-// Bitwise OR
-let orResult = 5 | 1; // 0101 | 0001 = 0101
-console.log(`5 | 1 = ${orResult}`);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Operators Example</title>
+</head>
+<body>
+    <h1>Bitwise Operators Example</h1>
+    <p>5 & 1 = <span id="andResult"></span></p>
+    <p>5 | 1 = <span id="orResult"></span></p>
+    <p>~5 = <span id="notResult"></span></p>
+    <p>5 ^ 1 = <span id="xorResult"></span></p>
+    <p>5 << 1 = <span id="leftShiftResult"></span></p>
+    <p>5 >> 1 = <span id="rightShiftResult"></span></p>
+    <p>5 >>> 1 = <span id="unsignedRightShiftResult"></span></p>
 
-// Bitwise NOT
-let notResult = ~5; // ~0101 = 1010 (which is -6 in two's complement form)
-console.log(`~5 = ${notResult}`); 
+    <script>
+        // Bitwise AND
+        let andResult = 5 & 1; // 0101 & 0001 = 0001
+        document.getElementById("andResult").textContent = andResult;
 
-// Bitwise XOR
-let xorResult = 5 ^ 1; // 0101 ^ 0001 = 0100
-console.log(`5 ^ 1 = ${xorResult}`); 
+        // Bitwise OR
+        let orResult = 5 | 1; // 0101 | 0001 = 0101
+        document.getElementById("orResult").textContent = orResult;
 
-// Left shift
-let leftShiftResult = 5 << 1; // 0101 << 1 = 1010
-console.log(`5 << 1 = ${leftShiftResult}`);
-
-// Right shift
-let rightShiftResult = 5 >> 1; // 0101 >> 1 = 0010
-console.log(`5 >> 1 = ${rightShiftResult}`); 
-
-// Unsigned right shift
-let unsignedRightShiftResult = 5 >>> 1; // 0101 >>> 1 = 0010
-console.log(`5 >>> 1 = ${unsignedRightShiftResult}`); 
+        // Bitwise NOT
+        let notResult = ~5; // ~0101 = 1010 (which is -6 in two's complement form)
+        document.getElementById("notResult").textContent = notResult;

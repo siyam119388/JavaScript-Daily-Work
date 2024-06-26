@@ -14,3 +14,24 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+function manipulateString() {
+    let originalString = "Hello, World!";
+    let upperCaseString = originalString.toUpperCase();
+    let lowerCaseString = originalString.toLowerCase();
+    let substring = originalString.substring(0, 5);
+    let concatenatedString = originalString + " How are you today?";
+    
+    let result = `
+        Original String: ${originalString} <br>
+        Upper Case: ${upperCaseString} <br>
+        Lower Case: ${lowerCaseString} <br>
+        Substring (0, 5): ${substring} <br>
+        Concatenated String: ${concatenatedString}
+    `;
+    
+    document.getElementById("result").innerHTML = result;
+}

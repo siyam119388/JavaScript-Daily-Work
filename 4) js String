@@ -1,1 +1,16 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation Example</title>
+</head>
+<body>
+    <h1>JavaScript String Manipulation</h1>
+    <button onclick="manipulateString()">Click me to manipulate the string</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -17,3 +17,28 @@
   <p id="result"></p>
 </body>
 </html>
+
+
+// Function to calculate the factorial of a number
+function factorial(n) {
+  if (n < 0) {
+    return "Factorial is not defined for negative numbers";
+  }
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+// Function to handle the form submission
+function calculateFactorial(event) {
+  event.preventDefault();
+  const numberInput = document.getElementById('number').value;
+  const number = parseInt(numberInput);
+
+  const result = factorial(number);
+  document.getElementById('result').innerText = `The factorial of ${number} is ${result}`;
+}
+
+// Add event listener to the form
+document.getElementById('factorialForm').addEventListener('submit', calculateFactorial);

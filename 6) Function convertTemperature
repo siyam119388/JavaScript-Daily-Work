@@ -27,3 +27,29 @@ function convertTemperature(value, fromUnit, toUnit) {
   }
 
   let convertedValue;
+
+  switch (toUnit) {
+    case 'Celsius':
+      convertedValue = tempInCelsius;
+      break;
+    case 'Fahrenheit':
+      convertedValue = (tempInCelsius * 9/5) + 32;
+      break;
+    case 'Kelvin':
+      convertedValue = tempInCelsius + 273.15;
+      break;
+  }
+
+  return convertedValue;
+}
+
+// Example usage:
+try {
+  console.log(convertTemperature(100, 'Celsius', 'Fahrenheit')); // 212
+  console.log(convertTemperature(32, 'Fahrenheit', 'Celsius')); // 0
+  console.log(convertTemperature(300, 'Kelvin', 'Celsius')); // 26.85
+  console.log(convertTemperature(100, 'Celsius', 'Kelvin')); // 373.15
+} catch (error) {
+  console.error(error.message);
+}
+

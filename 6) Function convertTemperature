@@ -1,1 +1,29 @@
+function convertTemperature(value, fromUnit, toUnit) {
+  if (typeof value !== 'number') {
+    throw new Error('Value must be a number');
+  }
 
+  const units = ['Celsius', 'Fahrenheit', 'Kelvin'];
+  if (!units.includes(fromUnit) || !units.includes(toUnit)) {
+    throw new Error('Invalid unit. Valid units are: Celsius, Fahrenheit, Kelvin');
+  }
+
+  if (fromUnit === toUnit) {
+    return value;
+  }
+
+  let tempInCelsius;
+
+  switch (fromUnit) {
+    case 'Celsius':
+      tempInCelsius = value;
+      break;
+    case 'Fahrenheit':
+      tempInCelsius = (value - 32) * 5/9;
+      break;
+    case 'Kelvin':
+      tempInCelsius = value - 273.15;
+      break;
+  }
+
+  let convertedValue;

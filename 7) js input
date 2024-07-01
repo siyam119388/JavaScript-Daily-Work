@@ -1,1 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Input Example</title>
+    
+</head>
+<body>
+    <h1>Basic Input Example</h1>
+    <form onsubmit="displayInput(); return false;">
+        <label for="userInput">Enter something:</label>
+        <input type="text" id="userInput" required>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="result"></p>
+</body>
+</html>
 

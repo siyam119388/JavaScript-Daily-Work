@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Input Example</title>
-    
+    <script>
+        function displayInput() {
+            // Get the value from the input field
+            let userInput = document.getElementById('userInput').value;
+            // Display the input value in the result paragraph
+            document.getElementById('result').innerText = "You entered: " + userInput;
+        }
+    </script>
 </head>
 <body>
     <h1>Basic Input Example</h1>
@@ -16,4 +23,3 @@
     <p id="result"></p>
 </body>
 </html>
-

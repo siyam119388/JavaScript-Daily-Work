@@ -1,0 +1,8 @@
+// Array of student objects
+let students = [
+    { name: 'Alice', score: 95 },
+    { name: 'Bob', score: 82 },
+    { name: 'Charlie', score: 68 },
+    { name: 'David', score: 73 },
+    { name: 'Eva', score: 58 }
+];

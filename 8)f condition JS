@@ -21,3 +21,9 @@ function getGrade(score) {
         return 'F';
     }
 }
+
+// Iterate over each student and print their name, score, and grade
+for (let student of students) {
+    let grade = getGrade(student.score);
+    console.log(`${student.name}: Score = ${student.score}, Grade = ${grade}`);
+}

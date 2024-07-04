@@ -11,7 +11,16 @@ switch (day) {
     case 3:
         dayName = "Wednesday";
         break;
-   
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
         dayName = "Sunday";
         break;
     default:

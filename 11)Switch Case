@@ -1,1 +1,49 @@
+const readline = require('readline');
+
+// Set up readline interface
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// Function to handle user commands
+function handleCommand(command, args) {
+  switch (command) {
+    case 'greet':
+      switch (args[0]) {
+        case 'morning':
+          console.log('Good morning!');
+          break;
+        case 'evening':
+          console.log('Good evening!');
+          break;
+        default:
+          console.log('Hello!');
+      }
+      break;
+
+    case 'math':
+      switch (args[0]) {
+        case 'add':
+          if (args.length === 3) {
+            const result = parseFloat(args[1]) + parseFloat(args[2]);
+            console.log(`Result: ${result}`);
+          } else {
+            console.log('Usage: math add <num1> <num2>');
+          }
+          break;
+        case 'subtract':
+          if (args.length === 3) {
+            const result = parseFloat(args[1]) - parseFloat(args[2]);
+            console.log(`Result: ${result}`);
+          } else {
+            console.log('Usage: math subtract <num1> <num2>');
+          }
+          break;
+        default:
+          console.log('Supported math commands: add, subtract');
+      }
+      break;
+
+   
 

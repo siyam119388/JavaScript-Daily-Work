@@ -45,5 +45,38 @@ function handleCommand(command, args) {
       }
       break;
 
-   
+    case 'weather':
+      console.log('Fetching weather information...');
+      // Simulate an async operation
+      setTimeout(() => {
+        switch (args[0]) {
+          case 'today':
+            console.log('Today\'s weather is sunny.');
+            break;
+          case 'tomorrow':
+            console.log('Tomorrow\'s weather is rainy.');
+            break;
+          default:
+            console.log('Supported weather commands: today, tomorrow');
+        }
+      }, 1000);
+      break;
+
+    default:
+      console.log(`Unknown command: ${command}`);
+      console.log('Supported commands: greet, math, weather');
+  }
+}
+
+// Function to prompt user for input
+function promptUser() {
+  rl.question('Enter a command: ', (input) => {
+    const [command, ...args] = input.split(' ');
+    handleCommand(command, args);
+    promptUser();
+  });
+}
+
+// Start the prompt
+promptUser();
 

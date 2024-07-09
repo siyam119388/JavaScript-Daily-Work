@@ -1,6 +1,11 @@
-let count = 1;
 
-while (count <= 5) {
-  console.log(count);
-  count++;
+let numbers = [1, 2, 3, 4, 5];  // Example array
+let sum = 0;  // Variable to store the sum
+let index = 0;  // Initialize index
+
+while (index < numbers.length) {
+  sum += numbers[index];  // Add the current element to the sum
+  index++;  // Move to the next element
 }
+
+console.log("The sum of the array is:", sum);  // Output the sum

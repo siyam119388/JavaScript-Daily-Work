@@ -1,1 +1,12 @@
+// Function to calculate the sum of the first n natural numbers
+function calculateSum(n) {
+    let sum = 0;
+    let i = 1;
 
+    do {
+        sum += i;
+        i++;
+    } while (i <= n);
+
+    return sum;
+}

@@ -10,3 +10,8 @@ function calculateSum(n) {
 
     return sum;
 }
+
+// Example usage:
+let n = 10;
+let result = calculateSum(n);
+console.log("The sum of the first " + n + " natural numbers is: " + result);

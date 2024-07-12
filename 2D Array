@@ -1,0 +1,30 @@
+// Function to print the array (matrix)
+function printArray(matrix) {
+    for (let row of matrix) {
+        console.log(row.join(' '));
+    }
+}
+
+// Function to calculate the trace of the matrix
+function calculateTrace(matrix) {
+    let trace = 0;
+    for (let i = 0; i < matrix.length; i++) {
+        trace += matrix[i][i];
+    }
+    return trace;
+}
+
+// Example 2D array (matrix)
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+// Print the array
+console.log("The matrix is:");
+printArray(matrix);
+
+// Calculate and print the trace
+let trace = calculateTrace(matrix);
+console.log("The trace of the matrix is: " + trace);

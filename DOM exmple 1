@@ -1,1 +1,6 @@
+document.getElementById("changeButton").addEventListener("click", function() {
+    var paragraph = document.getElementById("text");
+    paragraph.textContent = "The text has been changed!";
+    paragraph.style.color = "red";
+});
 

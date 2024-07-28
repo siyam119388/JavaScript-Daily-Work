@@ -1,6 +1,40 @@
+
+
+// Java Script 
+
 document.getElementById("changeButton").addEventListener("click", function() {
     var paragraph = document.getElementById("text");
     paragraph.textContent = "The text has been changed!";
     paragraph.style.color = "red";
 });
 
+
+// CSS
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f73;
+}

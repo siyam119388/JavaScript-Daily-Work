@@ -1,1 +1,9 @@
+function canFormTriangle(a, b, c) {
+    // Check if the sum of any two sides is greater than the third side
+    if (a + b > c && a + c > b && b + c > a) {
+        return true;
+    } else {
+        return false;
+    }
+}
 

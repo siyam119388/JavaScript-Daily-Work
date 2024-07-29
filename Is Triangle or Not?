@@ -7,3 +7,13 @@ function canFormTriangle(a, b, c) {
     }
 }
 
+// Example usage
+let side1 = parseFloat(prompt("Enter the first side:"));
+let side2 = parseFloat(prompt("Enter the second side:"));
+let side3 = parseFloat(prompt("Enter the third side:"));
+
+if (canFormTriangle(side1, side2, side3)) {
+    console.log("The sides can form a triangle.");
+} else {
+    console.log("The sides cannot form a triangle.");
+}

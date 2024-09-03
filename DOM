@@ -30,3 +30,12 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+//js file
+document.getElementById("colorButton").addEventListener("click", function() {
+    const title = document.getElementById("title");
+    if (title.style.color === "blue") {
+        title.style.color = "red";
+    } else {
+        title.style.color = "blue";
+    }
+});

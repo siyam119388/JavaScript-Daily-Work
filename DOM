@@ -13,3 +13,20 @@
     <script src="script.js"></script>
 </body>
 </html>
+//css file
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: blue;
+    transition: color 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

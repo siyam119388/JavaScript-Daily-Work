@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +21,21 @@
   <div id="myDiv">Original Text</div>
   <button id="changeTextButton">Change Text</button>
 
-  
+  <script>
+    // Select the div using querySelector
+    const myDiv = document.querySelector('#myDiv');
+    
+    // Select the button
+    const button = document.querySelector('#changeTextButton');
+    
+    // Add a click event listener to the button
+    button.addEventListener('click', function() {
+      // Change the text content of the div
+      myDiv.textContent = 'Text Changed!';
+      // Change the background color
+      myDiv.style.backgroundColor = 'lightgreen';
+    });
+  </script>
 
 </body>
 </html>
